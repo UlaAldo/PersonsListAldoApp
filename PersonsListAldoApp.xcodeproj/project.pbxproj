@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		C17F4A5127AF8212009C583E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A5027AF8212009C583E /* AppDelegate.swift */; };
 		C17F4A5327AF8212009C583E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A5227AF8212009C583E /* SceneDelegate.swift */; };
-		C17F4A5527AF8212009C583E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A5427AF8212009C583E /* ViewController.swift */; };
+		C17F4A5527AF8212009C583E /* AccountPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A5427AF8212009C583E /* AccountPersonViewController.swift */; };
 		C17F4A5827AF8212009C583E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17F4A5627AF8212009C583E /* Main.storyboard */; };
 		C17F4A5A27AF8212009C583E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17F4A5927AF8212009C583E /* Assets.xcassets */; };
 		C17F4A5D27AF8212009C583E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17F4A5B27AF8212009C583E /* LaunchScreen.storyboard */; };
+		C17F4A6927AF851F009C583E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A6827AF851F009C583E /* Person.swift */; };
+		C17F4A6C27AF8637009C583E /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A6B27AF8637009C583E /* PersonsListViewController.swift */; };
+		C17F4A6E27AF8961009C583E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A6D27AF8961009C583E /* DataManager.swift */; };
+		C17F4A7027AF9790009C583E /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A6F27AF9790009C583E /* SectionListViewController.swift */; };
+		C17F4A7227B11D27009C583E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17F4A7127B11D27009C583E /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C17F4A4D27AF8212009C583E /* PersonsListAldoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsListAldoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17F4A5027AF8212009C583E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17F4A5227AF8212009C583E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C17F4A5427AF8212009C583E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C17F4A5427AF8212009C583E /* AccountPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPersonViewController.swift; sourceTree = "<group>"; };
 		C17F4A5727AF8212009C583E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C17F4A5927AF8212009C583E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17F4A5C27AF8212009C583E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17F4A5E27AF8212009C583E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17F4A6827AF851F009C583E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C17F4A6B27AF8637009C583E /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		C17F4A6D27AF8961009C583E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C17F4A6F27AF9790009C583E /* SectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewController.swift; sourceTree = "<group>"; };
+		C17F4A7127B11D27009C583E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = PersonsListAldoApp/Storyboards/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		C17F4A4F27AF8212009C583E /* PersonsListAldoApp */ = {
 			isa = PBXGroup;
 			children = (
-				C17F4A5027AF8212009C583E /* AppDelegate.swift */,
-				C17F4A5227AF8212009C583E /* SceneDelegate.swift */,
-				C17F4A5427AF8212009C583E /* ViewController.swift */,
-				C17F4A5627AF8212009C583E /* Main.storyboard */,
-				C17F4A5927AF8212009C583E /* Assets.xcassets */,
-				C17F4A5B27AF8212009C583E /* LaunchScreen.storyboard */,
-				C17F4A5E27AF8212009C583E /* Info.plist */,
+				C17F4A6A27AF8525009C583E /* Models */,
+				C17F4A6427AF82F5009C583E /* View Controllers */,
+				C17F4A6527AF832C009C583E /* Storyboards */,
+				C17F4A6627AF834F009C583E /* App */,
+				C17F4A6727AF8362009C583E /* Resourses */,
 			);
 			path = PersonsListAldoApp;
+			sourceTree = "<group>";
+		};
+		C17F4A6427AF82F5009C583E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A7127B11D27009C583E /* TabBarViewController.swift */,
+				C17F4A6B27AF8637009C583E /* PersonsListViewController.swift */,
+				C17F4A6F27AF9790009C583E /* SectionListViewController.swift */,
+				C17F4A5427AF8212009C583E /* AccountPersonViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C17F4A6527AF832C009C583E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A5627AF8212009C583E /* Main.storyboard */,
+				C17F4A5B27AF8212009C583E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C17F4A6627AF834F009C583E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A5027AF8212009C583E /* AppDelegate.swift */,
+				C17F4A5227AF8212009C583E /* SceneDelegate.swift */,
+				C17F4A5E27AF8212009C583E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C17F4A6727AF8362009C583E /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A5927AF8212009C583E /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		C17F4A6A27AF8525009C583E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A6827AF851F009C583E /* Person.swift */,
+				C17F4A6D27AF8961009C583E /* DataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C17F4A5527AF8212009C583E /* ViewController.swift in Sources */,
+				C17F4A7227B11D27009C583E /* TabBarViewController.swift in Sources */,
+				C17F4A5527AF8212009C583E /* AccountPersonViewController.swift in Sources */,
+				C17F4A7027AF9790009C583E /* SectionListViewController.swift in Sources */,
+				C17F4A6E27AF8961009C583E /* DataManager.swift in Sources */,
+				C17F4A6C27AF8637009C583E /* PersonsListViewController.swift in Sources */,
 				C17F4A5127AF8212009C583E /* AppDelegate.swift in Sources */,
+				C17F4A6927AF851F009C583E /* Person.swift in Sources */,
 				C17F4A5327AF8212009C583E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJ8322288B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsListAldoApp/Info.plist;
+				INFOPLIST_FILE = PersonsListAldoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJ8322288B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsListAldoApp/Info.plist;
+				INFOPLIST_FILE = PersonsListAldoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
