@@ -17,9 +17,16 @@ class AccountPersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for label in [fullNameLabel, phoneLabel, mailLabel] {
+            label?.layer.masksToBounds = true
+            label?.layer.cornerRadius = 15
+        }
+        
         fullNameLabel.text = account.title
-        phoneLabel.text = account.phone
-        mailLabel.text = account.mail
+        phoneLabel.text = "Phone: \(account.phone)"
+        mailLabel.text = "Email: \(account.mail)"
+        
     }
 
 

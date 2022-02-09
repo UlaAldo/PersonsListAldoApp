@@ -32,8 +32,6 @@ class SectionListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.section]
         
-//        content.text = person.title
-        
         if indexPath.row == 0 {
             content.text = person.phone
             content.image = UIImage(systemName: "phone.down.fill")
@@ -46,5 +44,9 @@ class SectionListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+    }
 
 }
