@@ -6,20 +6,20 @@
 //
 
 class DataManager {
-
- static let sample = DataManager()
+    
+    static let sample = DataManager()
     
     let names = ["Liam",
-              "Noah",
-              "William",
-              "James",
-              "Logan",
-              "Benjamin",
-              "Mason",
-              "Elijah",
-              "Oliver",
-              "Jacob"
-]
+                 "Noah",
+                 "William",
+                 "James",
+                 "Logan",
+                 "Benjamin",
+                 "Mason",
+                 "Elijah",
+                 "Oliver",
+                 "Jacob"
+    ]
     let surnames = ["Smith",
                     "Kim",
                     "Ali",
@@ -54,5 +54,5 @@ class DataManager {
                 "uuu@mail.ru"
     ]
     
-    init(){}
+   private init(){}
 }

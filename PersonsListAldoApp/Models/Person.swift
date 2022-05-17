@@ -23,16 +23,15 @@ struct Person {
         let phones = DataManager.sample.phones.shuffled()
         let mails = DataManager.sample.mails.shuffled()
         
-       
+        
         for i in Array(0...names.count-1) {
-           let onePerson = Person(name: names[i], surname: surnames[i], phone: phones[i], mail: mails[i])
-    
-        persons.append(onePerson)
+            let onePerson = Person(name: names[i], surname: surnames[i], phone: phones[i], mail: mails[i])
+            
+            persons.append(onePerson)
         }
         
         return persons
-        }
-
     }
+}
 
 

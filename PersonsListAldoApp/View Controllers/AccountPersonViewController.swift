@@ -29,6 +29,5 @@ class AccountPersonViewController: UIViewController {
         
     }
 
-
 }
 

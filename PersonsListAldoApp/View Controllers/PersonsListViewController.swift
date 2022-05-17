@@ -14,7 +14,6 @@ class PersonsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
-
     }
 
     // MARK: - Table view data source
@@ -41,8 +40,6 @@ class PersonsListViewController: UITableViewController {
         performSegue(withIdentifier: "show", sender: person)
     }
 
-   
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let accountVC = segue.destination as? AccountPersonViewController else { return }
