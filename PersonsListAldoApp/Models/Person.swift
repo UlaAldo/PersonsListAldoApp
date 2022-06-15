@@ -24,8 +24,12 @@ struct Person {
         let mails = DataManager.sample.mails.shuffled()
         
         
-        for i in Array(0...names.count-1) {
-            let onePerson = Person(name: names[i], surname: surnames[i], phone: phones[i], mail: mails[i])
+        for index in Array(0..<names.count) {
+            let onePerson = Person(name: names[index],
+                                   surname: surnames[index],
+                                   phone: phones[index],
+                                   mail: mails[index]
+            )
             
             persons.append(onePerson)
         }

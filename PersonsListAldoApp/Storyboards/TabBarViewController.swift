@@ -8,8 +8,6 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
-    private let person = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +15,7 @@ class TabBarViewController: UITabBarController {
     }
     
     private func segueOnVC() {
+        let person = Person.getPerson()
         guard let personVC = viewControllers?.first as? PersonsListViewController else {return}
         guard let sectionVC = viewControllers?.last as? SectionListViewController else {return}
         

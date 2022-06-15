@@ -66,8 +66,9 @@
 		C17F4A4F27AF8212009C583E /* PersonsListAldoApp */ = {
 			isa = PBXGroup;
 			children = (
-				C17F4A6A27AF8525009C583E /* Models */,
 				C17F4A6427AF82F5009C583E /* View Controllers */,
+				C1FEB02B28598B0D00CF083B /* Services */,
+				C17F4A6A27AF8525009C583E /* Models */,
 				C17F4A6527AF832C009C583E /* Storyboards */,
 				C17F4A6627AF834F009C583E /* App */,
 				C17F4A6727AF8362009C583E /* Resourses */,
@@ -117,9 +118,16 @@
 			isa = PBXGroup;
 			children = (
 				C17F4A6827AF851F009C583E /* Person.swift */,
-				C17F4A6D27AF8961009C583E /* DataManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C1FEB02B28598B0D00CF083B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C17F4A6D27AF8961009C583E /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
